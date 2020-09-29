@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="startHomePage()">
+    <h1 class="main-title">Project 2 - Arthur Gutman</h1>
+    <div class="parallax"></div>
+
+
+    <!-- main page -->
+    <div class="main-div">
+        <nav>
+            <ul class="main-nav">
+                <li onclick="startHomePage()">Home</li>
+                <li>Live Reports</li>
+                <li onclick="startAboutPage()">About</li>
+                <li><input type="text" name="srch" id="srch" placeholder="Search...">
+                    <button onclick="searchCoin()">Search</button></li>
+            </ul>
+        </nav>
+        <!-- cards -->
+        <div class="home" id="home"></div>
+        <div id='alert'>
+            <div id='savedCurrencies'>
+            </div>        
+        </div>
+    </div>
+        
+    <div class="live-reports"></div>
+
+    <div class="about" id="about">
+        <div class="aboutContainer" id="aboutContainer">
+            <h1>Arthur Gutman</h1>
+            <h2>Fullstack Student - John Bryce</h2>
+            <h3>My AJAX & jQuery Project</h3>
+            <div class="image">
+                <img src="./img/me.png" alt="Photograph Of Me" height="400px" width="400px">
+            </div>
+            <h4>This is my project, I did my best.</h4>
+        </div>
+    </div>
+
+
+    <div class="parallax"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
